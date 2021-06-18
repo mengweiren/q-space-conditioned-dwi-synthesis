@@ -1,5 +1,5 @@
 # Q-space conditioned DWI synthesis
-Reference Implementation of paper "Q-space conditioned Translation Networks forDirectional Synthesis of Diffusion WeightedImages from Multi-modal Structural MRI", to appear in MICCAI 2021.
+Reference Implementation of paper "Q-space conditioned Translation Networks forDirectional Synthesis of Diffusion WeightedImages from Multi-modal Structural MRI" of Mengwei Ren*, Heejong Kim*, Neel Dey and Guido Gerig (* equal contribution), to appear in MICCAI 2021.
 
 ## Dependencies 
 ```shell
