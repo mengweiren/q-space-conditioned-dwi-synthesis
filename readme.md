@@ -1,5 +1,9 @@
-# Q-space conditioned DWI synthesis
+# Multi-modal q-space Conditioned DWI Synthesis
 Reference Implementation of paper "Q-space conditioned Translation Networks forDirectional Synthesis of Diffusion WeightedImages from Multi-modal Structural MRI" of Mengwei Ren*, Heejong Kim*, Neel Dey and Guido Gerig (* equal contribution), to appear in MICCAI 2021.
+
+[Project Page](https://heejongkim.com/dwi-synthesis) | [Paper]() 
+
+![Synthetic results on interoplated q-space](demo.gif)
 
 ## Dependencies 
 ```shell
@@ -23,6 +27,8 @@ All network and training related parameters will be specified in a configuration
 python train.py --config ../config/smri2scalar.yaml
 ```
 
+## Testing
+We provide a notebook under ./mains/ that shows how to synthesize a 2D slice give structural inputs and b-vector/b-values as conditions.
 
 ## Citation
 If you use this code, please consider citing our work:
