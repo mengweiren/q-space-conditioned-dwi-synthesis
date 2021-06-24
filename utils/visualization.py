@@ -42,7 +42,7 @@ def create_group_fig(img_list, num_row, cmaps, titles, resize=True, save_name=No
     plt.rcParams['figure.figsize'] = fig_size
     fig = plt.figure()
     num_figs = len(img_list)
-    num_col = np.ceil(num_figs / num_row)
+    num_col = int(np.ceil(num_figs / num_row))
     #print('Visualizing %d images in %d row %d column' % (num_figs, num_row, num_col))
     for i in range(num_figs):
         ax = plt.subplot(num_row, num_col, i + 1)

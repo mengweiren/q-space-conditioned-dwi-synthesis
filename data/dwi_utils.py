@@ -113,4 +113,21 @@ def read_h5(h5_file, subject, is_train=True, slice_idx=None, dir_idx=None, retur
         return return_data
 
 
+def synth_bvec_bvals(n_pts=64, bvals=2000):
+    import numpy as np
+    from dipy.core.sphere import disperse_charges, Sphere, HemiSphere
+
+    theta = np.pi * np.random.rand(n_pts)
+    phi = 2 * np.pi * np.random.rand(n_pts)
+    hsph_initial = HemiSphere(theta=theta, phi=phi)
+
+    hsph_updated, potential = disperse_charges(hsph_initial, 5000)
+
+    bvecs_synth = hsph_updated.vertices
+    bvecs_synth2 = np.concatenate([bvecs_synth[:, 2, None] * (-1), bvecs_synth[:, 0, None], bvecs_synth[:, 1, None]],
+                                  axis=-1)
+
+    bvals_synth = np.ones([n_pts, ]) * bvals
+    #bvecs_synth = np.concatenate([np.zeros([1, 3]), bvecs_synth], axis=0)
+    return bvecs_synth2, bvals_synth
 
