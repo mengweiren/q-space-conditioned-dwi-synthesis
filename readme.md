@@ -33,11 +33,12 @@ We provide a notebook under ./mains/ that shows how to synthesize a 2D slice giv
 ## Citation
 If you use this code, please consider citing our work:
 ```
-@inproceedings{ren2021qspace,
-  title={Q-space conditioned Translation Networks forDirectional Synthesis of Diffusion WeightedImages from Multi-modal Structural MRI},
-  author={Mengwei Ren and Heejong Kim and Neel Dey and Guido Gerig},
-  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
-  year={2021},
-  organization={Springer}
+@misc{ren2021qspace,
+      title={Q-space Conditioned Translation Networks for Directional Synthesis of Diffusion Weighted Images from Multi-modal Structural MRI}, 
+      author={Mengwei Ren and Heejong Kim and Neel Dey and Guido Gerig},
+      year={2021},
+      eprint={2106.13188},
+      archivePrefix={arXiv},
+      primaryClass={eess.IV}
 }
 ```
