@@ -1,7 +1,7 @@
 # Multi-modal q-space Conditioned DWI Synthesis
 Reference Implementation of paper "Q-space conditioned Translation Networks forDirectional Synthesis of Diffusion WeightedImages from Multi-modal Structural MRI" of Mengwei Ren*, Heejong Kim*, Neel Dey and Guido Gerig (* equal contribution), to appear in MICCAI 2021.
 
-[Project Page](https://heejongkim.com/dwi-synthesis) | [Paper]() 
+[Project Page](https://heejongkim.com/dwi-synthesis) | [Paper](https://arxiv.org/abs/2106.13188) 
 
 ![Synthetic results on interoplated q-space](demo.gif)
 
